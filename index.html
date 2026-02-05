@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Cosmetics Management system </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#be123c',
+                        secondary: '#fdf2f8',
+                        accent: '#881337',
+                        gold: '#d4af37',
+                        dark: '#0f172a'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+        {
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-secondary text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <nav class="glass-nav fixed w-full z-50 top-0 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <span
+                        class="font-display text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">LuxeGlow</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-primary font-medium hover:text-accent transition">Home</a>
+                    <a href="system.html" class="text-slate-600 font-medium hover:text-primary transition">System</a>
+                    <a href="about.html" class="text-slate-600 font-medium hover:text-primary transition">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-primary font-medium bg-red-50 rounded-md">Home</a>
+                <a href="system.html"
+                    class="block px-3 py-2 text-slate-600 font-medium hover:bg-slate-50 hover:text-primary rounded-md">System</a>
+                <a href="about.html"
+                    class="block px-3 py-2 text-slate-600 font-medium hover:bg-slate-50 hover:text-primary rounded-md">About
+                    & Services</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8 animate-fade-in-up">
+                    <h1 class="text-5xl lg:text-7xl font-bold leading-tight text-dark">
+                        cosmetics in <br>
+                        <span class="text-primary">Inventory</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-lg leading-relaxed">
+                        Effortlessly manage your cosmetics collection with our premium management system.
+                        Digitalize your store, track inventory, and ensure beauty never runs out of stock.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="system.html"
+                            class="bg-primary text-white px-8 py-4 rounded-full font-medium shadow-lg hover:bg-accent hover:shadow-xl hover:-translate-y-1 transition duration-300 transform">
+                            Manage Products
+                        </a>
+                        <a href="about.html"
+                            class="bg-white text-slate-700 px-8 py-4 rounded-full font-medium border border-slate-200 shadow-sm hover:border-primary hover:text-primary transition duration-300">
+                            Learn More
+                        </a>
+                    </div>
+                    <!-- Stats / Trust -->
+                    <div class="pt-8 flex space-x-12 border-t border-slate-200/60">
+                        <div>
+                            <p class="text-3xl font-bold text-dark">100%</p>
+                            <p class="text-sm text-slate-500 uppercase tracking-wide">Digital</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-dark">Zero</p>
+                            <p class="text-sm text-slate-500 uppercase tracking-wide">Manual Errors</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Interactive Image Grid/Carousel -->
+                <div class="relative">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-r from-pink-200 to-rose-100 rounded-full blur-3xl opacity-30 -z-10 animate-pulse">
+                    </div>
+                    <div>
+                        <h2> OUR Services beauty</h2>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4 pt-12">
+                            <img src="/lipstick.jpeg.jpeg"alt="lipstick"
+                                class="w-full h-64 object-cover rounded-2xl shadow-xl hover:scale-105 transition duration-500">
+                            <img src="/wwww.jpeg" alt="Lip Gloss"
+                                class="w-full h-48 object-cover rounded-2xl shadow-lg hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="space-y-4">
+                            <img src="/natural beauty.jpeg.jpeg" alt="Sun Serum"
+                                class="w-full h-56 object-cover rounded-2xl shadow-lg hover:scale-105 transition duration-500">
+                            <img src="/lip gloss.jpeg.jpeg" alt="Lip Gloss Product"
+                                class="w-full h-64 object-cover rounded-2xl shadow-xl hover:scale-105 transition duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="mt-auto bg-white border-t border-slate-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="font-display text-2xl font-bold text-primary mb-4">lighting</p>
+            <p class="text-slate-500 mb-8 max-w-md mx-auto">Providing digital solutions for the modern beauty industry.
+            </p>
+            <div class="text-sm text-slate-400">
+                &copy; 2026 Cosmetics Management System. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="system.js"></script>
+</body>
+
+</html>

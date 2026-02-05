@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Services | LuxeGlow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#be123c',
+                        secondary: '#fdf2f8',
+                        accent: '#881337',
+                        gold: '#d4af37',
+                        dark: '#0f172a'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-secondary text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html"
+                    class="font-display text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">LuxeGlow</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-600 font-medium hover:text-primary transition">Home</a>
+                    <a href="system.html" class="text-slate-600 font-medium hover:text-primary transition">System</a>
+                    <a href="about.html" class="text-primary font-medium border-b-2 border-primary">About &
+                        Services</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="block px-3 py-2 text-slate-600 font-medium hover:bg-slate-50 hover:text-primary rounded-md">Home</a>
+                <a href="system.html"
+                    class="block px-3 py-2 text-slate-600 font-medium hover:bg-slate-50 hover:text-primary rounded-md">System</a>
+                <a href="about.html" class="block px-3 py-2 text-primary font-medium bg-red-50 rounded-md">About
+                    & Services</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow w-full">
+        <!-- About Header -->
+        <div class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+                <h1 class="text-4xl md:text-5xl font-bold text-dark">Deka's cosmetics</h1>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    LuxeGlow is a premier digital solution designed to streamline inventory management for cosmetic
+                    retailers.
+                    We replace outdated manual logging with a sleek, efficient, and intelligent system.
+                </p>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Our Services</h2>
+                <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border border-slate-100">
+                    <div class="w-14 h-14 bg-red-50 rounded-full flex items-center justify-center mb-6 text-primary">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Inventory Tracking</h3>
+                    <p class="text-slate-600">
+                        Real-time monitoring of stock levels ensures you never run out of your bestsellers. track
+                        quantities and prices effortlessly.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border border-slate-100">
+                    <div class="w-14 h-14 bg-red-50 rounded-full flex items-center justify-center mb-6 text-primary">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Sales Analytics</h3>
+                    <p class="text-slate-600">
+                        Gain insights into your product performance. Identify trends and make data-driven decisions to
+                        boost your profitability.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border border-slate-100">
+                    <div class="w-14 h-14 bg-red-50 rounded-full flex items-center justify-center mb-6 text-primary">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Secure Management</h3>
+                    <p class="text-slate-600">
+                        Keep your business data safe with our local-first secure architecture. Your inventory data is
+                        always accessible and protected.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="bg-white py-16 border-t border-slate-100">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-dark mb-4">Contact Us</h2>
+                    <p class="text-slate-600">Have questions? We'd love to hear from you.</p>
+                </div>
+
+                <form class="space-y-6" onsubmit="event.preventDefault(); alert('Message sent! (Demo only)');">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Name</label>
+                            <input type="text"
+                                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                                required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                            <input type="email"
+                                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                                required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Message</label>
+                        <textarea rows="4"
+                            class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
+                            required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-primary text-white py-3 rounded-lg font-medium hover:bg-accent transition shadow-lg">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto bg-white border-t border-slate-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="font-display text-2xl font-bold text-primary mb-4">LuxeGlow</p>
+            <div class="text-sm text-slate-400">
+                &copy; 2026 Cosmetics Management System. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="system.js"></script>
+</body>
+
+</html>
